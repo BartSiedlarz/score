@@ -1,0 +1,3 @@
+yarn lint:tsc
+yarn lint
+yarn test

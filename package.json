@@ -1,0 +1,29 @@
+{
+  "name": "score",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "ts-node src/app.ts",
+    "lint": "eslint .",
+    "lint:tsc": "tsc --noEmit -p tsconfig.eslint.json",
+    "format": "prettier --write './**/*.{js,ts,json,md}'",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "2.1.8",
+    "eslint": "^9.17.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
+  }
+}
