@@ -2,7 +2,7 @@ import { log } from './infra/logger'
 import { StorageFactory } from './repository/data'
 import { MatchService } from './service/matchService'
 
-const data = StorageFactory.createLogger('static')
+const data = StorageFactory.createStorage('static')
 const matchService = new MatchService(data, log)
 
 export const getMatchesResults = () => {

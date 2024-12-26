@@ -3,7 +3,7 @@ import { StorageFactory } from './data'
 
 describe('data', () => {
   it('should return static data', () => {
-    const data = StorageFactory.createLogger('static')
+    const data = StorageFactory.createStorage('static')
 
     expect(data.getMatches()).toEqual([
       {
@@ -47,7 +47,7 @@ describe('data', () => {
 
   it('should throw an error for invalid storage type', () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    expect(() => StorageFactory.createLogger('invalid' as any)).toThrowError(
+    expect(() => StorageFactory.createStorage('invalid' as any)).toThrowError(
       'Invalid storage type.',
     )
   })

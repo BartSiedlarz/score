@@ -50,7 +50,7 @@ export class StaticData implements Storage {
 }
 
 export class StorageFactory {
-  static createLogger(type: 'static'): Storage {
+  static createStorage(type: 'static'): Storage {
     switch (type) {
       case 'static':
         return new StaticData()
